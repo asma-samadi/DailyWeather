@@ -1,0 +1,51 @@
+.body-tag {
+  background-color: #8fabdb;
+}
+
+.header-tag {
+  background: #8fabdb;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 3px solid rgba(255, 255, 255, 0.288);
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.input-tags {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 40px;
+  width: 400px;
+}
+
+.first-input {
+  margin-left: 0px;
+  border-left-width: 0px;
+  padding-left: 2px;
+  margin-right: 8px;
+  padding: none;
+  border: none;
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+  text-decoration: rgba(39, 33, 66, 0.4);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+.second-input {
+  width: 150px;
+  height: 42px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: none;
+  font-size: 20px;
+  color: rgba(39, 33, 66, 0.521);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.918);
+}
