@@ -6,13 +6,13 @@
   background: #8fabdb;
   width: 400px;
   padding: 30px;
+  padding-bottom: 0px;
   margin: auto;
   margin-top: 100px;
   border-radius: 16px;
   backdrop-filter: blur(10px);
   border: 3px solid rgba(255, 255, 255, 0.288);
   color: white;
-  font-size: 20px;
   font-family: sans-serif;
 }
 
@@ -48,4 +48,51 @@
   color: rgba(39, 33, 66, 0.521);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.918);
+}
+
+.h1-tag {
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+}
+
+.degree-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.degree {
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.degree-symbol {
+  font-size: 60px;
+}
+
+.icon-tag {
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 15px;
+}
+
+.degree-symbol-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.situation {
+  font-size: 23px;
+}
+
+.second-details {
+  margin: 80px;
+  margin-bottom: 30px;
+  padding: 1px;
+  font-size: 18px;
 }
