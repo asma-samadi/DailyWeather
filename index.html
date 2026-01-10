@@ -3,48 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body-tag">
     <header class="header-tag">
       <div class="input-tags">
-        <input
-          class="first-input"
-          type="text"
-          placeholder="Enter a city..."
-          required
-        />
-        <input class="second-input" type="submit" value="Search" required />
+        <form class="form-element" id="form-element">
+          <input
+            class="first-input"
+            id="first-input"
+            type="text"
+            placeholder="Enter a city..."
+            required
+          />
+          <input
+            class="second-input"
+            id="second-input"
+            type="submit"
+            value="Search"
+            required
+          />
+        </form>
       </div>
-      <div class="h1-tag">
+
+      <div class="h1-tag" id="h1-tag">
         <h1>Paris</h1>
       </div>
       <div class="details">
         <header class="first-details">
           <div>
-            <strong><span class="day">Saturday</span></strong>
             <br />
             <div class="degree-icon">
-              <span class="degree">30 </span>
+              <span class="degree" id="degree">30 </span>
               <div class="degree-symbol-icon">
                 <span class="degree-symbol">° </span>
                 <div class="icon-tag">
-                  <span class="icon">☀️</span>
+                  <span class="icon" id="icon">☀️</span>
                 </div>
               </div>
             </div>
           </div>
-          <span class="situation">clear sky</span>
+          <span class="situation" id="situation">clear sky</span>
         </header>
         <header class="second-details">
-          <span>Time: 12:8</span>
+          <span class="day">Saturday</span>
           <br />
-          <span>Humidity:93%</span>
+          <span>Time: <span id="time">12:8</span></span>
           <br />
-          <span>Wind: 6.69km/h</span>
+          <span>Humidity: <span id="humidity">93</span>%</span>
+          <br />
+          <span>Wind: <span id="wind">6.69</span>km/h</span>
         </header>
       </div>
+      <footer class="creator-details">
+        This project was coded by
+        <a class="name" href="#" target="_blank">Asma Samadi</a>, is
+        <a class="Git-hub" href="#" target="_blank"> open-sourced on GitHub</a>
+        and
+        <a class="Netlify" href="#" target="_blank">hosted on Netlify</a>
+      </footer>
     </header>
+    <script src="script.js"></script>
   </body>
 </html>
