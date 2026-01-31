@@ -7,6 +7,7 @@ function updateData(response) {
   let weatherWind = document.querySelector("#wind");
   let weatherTime = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let weatherIcon = document.querySelector("#icon");
 
   temperature.innerHTML = Math.round(temperatureValue);
   h1Tag.innerHTML = response.data.city;
@@ -14,9 +15,12 @@ function updateData(response) {
   weatherTime.innerHTML = updateDate(date);
   weatherHumidity.innerHTML = response.data.temperature.humidity;
   weatherWind.innerHTML = response.data.wind.speed;
+  weatherIcon.innerHTML = `<img src ="${response.data.condition.icon_url}" class = "icon-tag" />`;
 }
 
 function updateDate(date) {
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
   let days = [
     "Sunday",
     "Monday",
@@ -26,15 +30,12 @@ function updateDate(date) {
     "Friday",
     "Saturday",
   ];
-  let hour = date.getHours();
-  let minute = date.getMinutes();
   let day = days[date.getDay()];
 
-  if (minute < 10) {
-    minute = `0${minute}`;
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
   }
-
-  return `<span style = 'font-size:28px; height:150px; margin-bottom:30px'>${day}</span> <br> Time:${hour}: ${minute}`;
+  return `<span style = "font-size:28px; height:150px; margin-bottom:30px;">${day} </span> <br /> Time: ${hour}:${minutes}`;
 }
 
 function apiFunc(city) {
